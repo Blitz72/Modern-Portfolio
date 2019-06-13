@@ -123,7 +123,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(94, 94, 94, 0.5); }
 
 a {
   color: #fff;
@@ -198,12 +198,15 @@ main {
     margin: 10px;
     transition: all 0.5s ease-out; }
     .contact-info div:hover {
-      font-size: 20px;
+      padding: 20px 10px;
+      margin: 10px 18px;
       border: 3px #fff solid;
       background: #eece1a;
       color: #000; }
       .contact-info div:hover span, .contact-info div:hover a {
         color: #000; }
+  .contact-info #email-text:hover, .contact-info #gmail-text:hover {
+    cursor: copy; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
