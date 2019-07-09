@@ -28,8 +28,9 @@ h1, h2, h3 {
 
     &.sm-heading {
         margin-bottom: 2rem;
-        padding: 0.2rem;
+        padding: 0.5rem;
         background: rgba(lighten($primary-color, 10), 0.5);
+        border-top: $secondary-color 5px solid;
     }
 }
 
@@ -96,6 +97,10 @@ main {
         grid-area: bio;
         font-size: 1.5rem;
     }
+
+    .bio-quote {
+        font-size: 1.0rem;
+    }
     
     .job-1 {
         grid-area: job1;
@@ -113,6 +118,7 @@ main {
 }
 
 // Work/Projects Page
+
 .projects {
     display: grid;
     grid-gap: 20px;
@@ -120,10 +126,10 @@ main {
 
     img {
         width: 100%;
-        border: 3px #fff solid;
+        border: 5px #fff solid;
 
         &:hover {
-            opacity: 0.5;
+            opacity: 0.6;
             border-color: $secondary-color;
             @include easeOut;
         }
@@ -139,14 +145,15 @@ main {
     margin-top: 1rem;
 
     div {
-        padding: 20px;
+        padding: 15px;
         border: 3px $secondary-color solid;
-        margin: 10px;
+        border-radius: 10px;
+        margin: 20px 15px;
         @include easeOut;
 
         &:hover {
-            padding: 20px 10px;
-            margin: 10px 18px;
+            padding: 20px;
+            margin: 15px 10px;
             border: 3px #fff solid;
             background: $secondary-color;
             color: set-text-color($secondary-color);
@@ -158,21 +165,29 @@ main {
     }
 
     #email-text:hover, #gmail-text:hover {
-        cursor: copy;
-        
+        // cursor: copy;
+        cursor: text;
     }
 }
 
 // Button Styles
 .btn {
     display: block;
-    padding: 0.5rem 1rem;
+    // padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border: 0;
     margin-bottom: 0.3rem;
     &:hover {
-        @include easeOut;
+        // border: 5px solid;
+        // border-color:  darken($secondary-color, 12);
+        // border-color: $secondary-color;
+        // border-block-start-color: lighten($secondary-color, 20);
+        // border-block-end-color: darken($secondary-color, 20);
+        // padding: 3px 13px;
         background: $secondary-color;
+        // background-image: linear-gradient(darken($secondary-color, 20), $secondary-color, darken($secondary-color, 20));
         color: set-text-color($secondary-color);
+        @include easeOut;
     }
 }
 
@@ -186,6 +201,11 @@ main {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #333;
+
+    // &:hover {
+    //     border: 2px solid;
+    //     border-color: darken($secondary-color, 50);
+    // }
 }
 
 #main-footer {
