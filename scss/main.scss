@@ -98,8 +98,12 @@ main {
         font-size: 1.5rem;
     }
 
-    .bio-quote {
+    #bio-quote, #bio-quote-author {
         font-size: 1.0rem;
+    }
+
+    .display-inline-block {
+        display: inline-block;
     }
     
     .job-1 {

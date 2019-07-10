@@ -1,16 +1,16 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 20px;
+  top: 34px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.375s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -44,13 +44,13 @@
     background: #262626;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #333;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -58,14 +58,14 @@
       height: 250px;
       background: url("../img/portrait2.png");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #f3b037; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #f3b037; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,9 +75,9 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #f3b037; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -124,7 +124,7 @@ h1, h2, h3 {
     margin-bottom: 2rem;
     padding: 0.5rem;
     background: rgba(77, 77, 77, 0.5);
-    border-top: #eece1a 5px solid; }
+    border-top: #f3b037 5px solid; }
 
 a {
   color: #fff;
@@ -136,7 +136,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #f3b037; }
 
 main {
   padding: 4rem;
@@ -146,8 +146,8 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
+        color: #f3b037;
+        transition: all 0.375s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -162,12 +162,14 @@ main {
     grid-area: bioimage;
     margin: 0 auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #f3b037 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .bio-quote {
+  .about-info #bio-quote, .about-info #bio-quote-author {
     font-size: 1.0rem; }
+  .about-info .display-inline-block {
+    display: inline-block; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -175,7 +177,7 @@ main {
   .about-info .job {
     background: #404040;
     padding: 0.5rem;
-    border-top: #eece1a 5px solid; }
+    border-top: #f3b037 5px solid; }
 
 .projects {
   display: grid;
@@ -186,8 +188,8 @@ main {
     border: 5px #fff solid; }
     .projects img:hover {
       opacity: 0.6;
-      border-color: #eece1a;
-      transition: all 0.5s ease-out; }
+      border-color: #f3b037;
+      transition: all 0.375s ease-out; }
 
 .contact-info {
   display: flex;
@@ -197,15 +199,15 @@ main {
   margin-top: 1rem; }
   .contact-info div {
     padding: 15px;
-    border: 3px #eece1a solid;
+    border: 3px #f3b037 solid;
     border-radius: 10px;
     margin: 20px 15px;
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
     .contact-info div:hover {
       padding: 20px;
       margin: 15px 10px;
       border: 3px #fff solid;
-      background: #eece1a;
+      background: #f3b037;
       color: #000; }
       .contact-info div:hover span, .contact-info div:hover a {
         color: #000; }
@@ -218,9 +220,9 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #f3b037;
     color: #000;
-    transition: all 0.5s ease-out; }
+    transition: all 0.375s ease-out; }
 
 .btn-dark {
   background: black;
