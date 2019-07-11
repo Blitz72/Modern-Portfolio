@@ -77,12 +77,16 @@ main {
 }
 
 .about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas:
-        'bioimage bio bio'
-        'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+
+    // .bio-grid {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas:
+            'bioimage bio bio'
+            'job1 job2 job3';
+        grid-template-columns: repeat(3, 1fr);
+    // }
+    
 
     .bio-image {
         grid-area: bioimage;
@@ -105,6 +109,14 @@ main {
     .display-inline-block {
         display: inline-block;
     }
+
+    // .jobs-grid {
+    //     display: grid;
+    //     grid-gap: 30px;
+    //     grid-template-areas:
+    //         'job1 job2';
+    //     grid-template-columns: repeat(2, fr1);
+    // }
     
     .job-1 {
         grid-area: job1;

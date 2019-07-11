@@ -243,6 +243,8 @@ main {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .about-info {
+    grid-template-columns: repeat(2, 1fr); }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -279,7 +281,6 @@ main {
   main#home h1 {
     margin-top: 10vh; }
   .menu-nav {
-    display: flex;
     grid-template-columns: 1fr; }
   .about-info .bio-image {
     width: 50vw; }
