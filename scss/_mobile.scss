@@ -71,6 +71,17 @@
         margin-top: 10vh;
     }
 
+    .menu-nav {
+        display: flex;
+        grid-template-columns: 1fr;
+    }
+
+    .about-info {
+        .bio-image {
+            width: 50vw;
+        }
+    }
+
     .projects {
         grid-template-columns: 1fr;
     }
